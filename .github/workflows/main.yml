@@ -1,0 +1,21 @@
+name: My First Pipeline
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome Message
+        run: echo "Hello Arvind"
+
+      - name: Show Date
+        run: date
+
+      - name: List Files
+        run: ls -la
+
+      - name: Pipeline Success
+        run: echo "CI/CD pipeline running successfully"
